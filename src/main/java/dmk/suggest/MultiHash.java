@@ -36,14 +36,5 @@ public class MultiHash {
 	}
 	return (hashval & mask) % rangeval;
     }
-
-    public static void main(String args[]) {
-	MultiHash r = new MultiHash(5, 0x8FFFFFFF, 1019);
-	System.out.println("The hash value is " + r.hash(0, "David Loshin"));
-	System.out.println("The hash value is " + r.hash(1, "David Loshin"));
-	System.out.println("The hash value is " + r.hash(2, "David Loshin"));
-	System.out.println("The hash value is " + r.hash(3, "David Loshin"));
-	System.out.println("The hash value is " + r.hash(4, "David Loshin"));
-    }
 }
 
